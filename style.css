@@ -86,17 +86,19 @@
                 right: 0%;
                 margin-left: 5rem;
                 margin-right: 2rem;
-                padding-left: 15vw;
-                padding-right: 15vw;
+                padding-left: 10vw;
+                padding-right: 10vw;
                 overflow: scroll;
             }
 
-            .contentWrapper h3 {
+            .contentWrapper h3,.contentWrapper h2  {
                 display: flex;
                 justify-content: center;
                 align-items: center;
 /*                font-size: 5rem;*/
                 margin: 1rem 0;
+                padding-left: 10vw;
+                padding-right: 5vw;
                 overflow: scroll;
                         }
             
@@ -207,7 +209,7 @@
                 .grid {
                     display: grid;
                     grid-gap: 16px;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr ;
                 }
             }
             
