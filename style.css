@@ -90,6 +90,15 @@
                 padding-right: 15vw;
                 overflow: scroll;
             }
+
+            .contentWrapper h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+/*                font-size: 5rem;*/
+                margin: 1rem 0;
+                overflow: scroll;
+                        }
             
             footer {
                 position: absolute;
