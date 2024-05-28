@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <title>Sarhana</title>
+    <link rel="icon" href="../Icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="NavBar">
+        <div class="Logo">
+            SARHANA
+        </div>
+        <ul>
+            <li><a href="../AboutMe.html">About&nbsp;Me</a></li>
+            <li><a href="../Projects.html">Projects</a></li>
+            <li><a href="../Blogs.html">Blogs</a></li>
+            <li><a href="../ContactMe.html">Contact&nbsp;Me</a></li>
+        </ul>
+    </div>
+    <div class="contentWrapper">
+        <h1>A* Algorithm Explained</h1>
+        <video controls>
+          <source src="A_star_algorithm.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 style="font-weight:normal; margin-left: 1rem; padding-left: 0;">
+            Tools used: <strong> Tkinter for GUI, Python</strong>
+ 
+
+            
+            <br>
+            <br>
+            The A* (A star) algorithm is a popular pathfinding and graph traversal method used in computer science and game development. It finds the shortest path from the start node to the goal node while trying to minimize the total cost (distance, time, or other metrics). A* achieves its efficiency by using heuristics to estimate the cost of reaching the goal from each node, allowing it to prioritize paths that are likely to lead to the goal more quickly. It combines features of Dijkstra’s Algorithm, which is the best for finding the shortest path, and Greedy Best-First-Search, which is fast at pathfinding. The algorithm is widely used in scenarios where a clear and efficient pathfinding solution is essential, such as in AI for games and robotic navigation.
+            
+            <br>
+            <br>
+            <ul>
+                <li><strong>Start and End Points:</strong> The algorithm starts from the <span style="color:darkblue;">dark blue</span> cell (start point) and aims to reach the <span style="color:lightblue;">light blue</span> cell (end point).</li>
+                <li><strong>Exploration Process:</strong>
+                       <strong>Yellow Cells:</strong> Indicate nodes that have been explored. These cells represent paths that the algorithm has already considered but may return to if other routes prove less optimal.
+                        <strong>Red Cells:</strong> Highlight the current frontier of exploration. These are the cells where the algorithm is actively calculating paths to determine the next best move.
+                </li>
+                <li><strong>Obstacles:</strong>
+                    <ul>
+                  Black Cells:</strong> Represent obstacles or blocked areas that the algorithm cannot traverse. The pathfinding process needs to navigate around these blocks to find a route to the destination.
+                    </ul>
+                </li>
+                <li><strong>Path Determination:</strong>
+                    The algorithm calculates costs from the start node to all adjacent nodes, progressively exploring the grid. It uses a heuristic (often the Euclidean or Manhattan distance) to estimate costs from each node to the destination, prioritizing nodes with the lowest total estimated cost.
+                        As it explores, the algorithm dynamically adjusts its path based on these calculated costs, ensuring it always follows the most promising route toward the end point.
+                </li>
+                <li><strong>Optimal Path Found:</strong> Once the algorithm reaches the light blue</span> cell, it has determined the most efficient route from start to end, navigating through available paths and avoiding obstacles.</li>
+            </ul>
+        </h3>
+        <footer>
+            © Sarhana 2024
+        </footer>
+
+    </div>
+</body>
+
+</html>
